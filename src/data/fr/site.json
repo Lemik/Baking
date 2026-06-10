@@ -1,0 +1,30 @@
+{
+  "title": "NANA Bakery — Pain au citron et rouleau au pavot, livrés ou à emporter",
+  "description": "Pain au citron et rouleau aux graines de pavot faits maison à Nanaimo, C.-B. Livraison à domicile ou cueillette. Commandez par courriel.",
+  "brand": "NANA Bakery",
+  "hero": {
+    "headline": "Pain au citron et rouleau au pavot, faits à la maison",
+    "subheadline": "Deux favoris de notre cuisine de Nanaimo — livraison à domicile ou cueillette, à votre choix.",
+    "badge": "Nanaimo, C.-B. · Livraison et cueillette"
+  },
+  "about": {
+    "title": "Préparé avec soin, livré avec amour",
+    "paragraphs": [
+      "NANA Bakery est une cuisine familiale qui prépare de petites séries de pain au citron et de rouleau aux graines de pavot pour les voisins de Nanaimo.",
+      "Nous nous approvisionnons sur l'île de Vancouver et en Colombie-Britannique autant que possible — chaque pâtisserie raconte une histoire locale.",
+      "Pas de boutique — choisissez la livraison à domicile partout à Nanaimo, ou la cueillette à notre cuisine à une heure convenue."
+    ]
+  },
+  "fulfillment": {
+    "title": "Livraison à domicile ou cueillette",
+    "subtitle": "Deux façons simples de savourer une fraîche pâtisserie à Nanaimo.",
+    "delivery": {
+      "title": "Livraison à domicile",
+      "description": "Nous livrons votre commande directement à votre porte partout à Nanaimo. Idéal quand vous préférez rester chez vous."
+    },
+    "pickup": {
+      "title": "Cueillette",
+      "description": "Récupérez votre commande à notre cuisine familiale. Nous fixerons un moment qui vous convient par courriel."
+    }
+  }
+}

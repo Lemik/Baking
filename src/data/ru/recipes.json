@@ -1,0 +1,92 @@
+[
+  {
+    "productId": "lemon-loaf",
+    "ingredients": [
+      {
+        "name": "Органическая пшеничная мука",
+        "origin": {
+          "label": "Остров Ванкувер",
+          "detail": "Помол в BC",
+          "icon": "/images/origins/grain.svg"
+        }
+      },
+      {
+        "name": "Свежие лимоны",
+        "origin": {
+          "label": "Импорт",
+          "detail": "Цедра и сок",
+          "icon": "/images/origins/lemon.svg"
+        }
+      },
+      {
+        "name": "Масло из BC",
+        "origin": {
+          "label": "Fraser Valley",
+          "detail": "Сливочное масло",
+          "icon": "/images/origins/dairy.svg"
+        }
+      },
+      {
+        "name": "Тростниковый сахар",
+        "origin": {
+          "label": "Fair trade",
+          "detail": "Нерафинированный",
+          "icon": "/images/origins/sugar.svg"
+        }
+      },
+      {
+        "name": "Яйца свободного выгула",
+        "origin": {
+          "label": "Fraser Valley",
+          "detail": "Местные фермы",
+          "icon": "/images/origins/eggs.svg"
+        }
+      }
+    ]
+  },
+  {
+    "productId": "poppy-seed-roll",
+    "ingredients": [
+      {
+        "name": "Пшеничная мука",
+        "origin": {
+          "label": "Британская Колумбия",
+          "detail": "Каменный помол",
+          "icon": "/images/origins/grain.svg"
+        }
+      },
+      {
+        "name": "Маковая начинка",
+        "origin": {
+          "label": "Импорт",
+          "detail": "Молотые маковые семена",
+          "icon": "/images/origins/poppy.svg"
+        }
+      },
+      {
+        "name": "Масло из BC",
+        "origin": {
+          "label": "Fraser Valley",
+          "detail": "Сливочное масло",
+          "icon": "/images/origins/dairy.svg"
+        }
+      },
+      {
+        "name": "Местный мёд",
+        "origin": {
+          "label": "Остров Ванкувер",
+          "detail": "Небольшая пасека",
+          "icon": "/images/origins/honey.svg"
+        }
+      },
+      {
+        "name": "Цельное молоко",
+        "origin": {
+          "label": "Fraser Valley",
+          "detail": "Молочные продукты BC",
+          "icon": "/images/origins/dairy.svg"
+        }
+      }
+    ]
+  }
+]

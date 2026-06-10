@@ -1,0 +1,92 @@
+[
+  {
+    "productId": "lemon-loaf",
+    "ingredients": [
+      {
+        "name": "Farine de blé biologique",
+        "origin": {
+          "label": "Île de Vancouver",
+          "detail": "Moulue en C.-B.",
+          "icon": "/images/origins/grain.svg"
+        }
+      },
+      {
+        "name": "Citrons frais",
+        "origin": {
+          "label": "Importés",
+          "detail": "Zeste et jus",
+          "icon": "/images/origins/lemon.svg"
+        }
+      },
+      {
+        "name": "Beurre de C.-B.",
+        "origin": {
+          "label": "Fraser Valley",
+          "detail": "Beurre de laiterie",
+          "icon": "/images/origins/dairy.svg"
+        }
+      },
+      {
+        "name": "Sucre de canne",
+        "origin": {
+          "label": "Commerce équitable",
+          "detail": "Canne non raffinée",
+          "icon": "/images/origins/sugar.svg"
+        }
+      },
+      {
+        "name": "Œufs de poules élevées en liberté",
+        "origin": {
+          "label": "Fraser Valley",
+          "detail": "Fermes locales",
+          "icon": "/images/origins/eggs.svg"
+        }
+      }
+    ]
+  },
+  {
+    "productId": "poppy-seed-roll",
+    "ingredients": [
+      {
+        "name": "Farine de blé",
+        "origin": {
+          "label": "Colombie-Britannique",
+          "detail": "Blé moulu à la pierre",
+          "icon": "/images/origins/grain.svg"
+        }
+      },
+      {
+        "name": "Garniture de graines de pavot",
+        "origin": {
+          "label": "Importée",
+          "detail": "Graines de pavot moulues",
+          "icon": "/images/origins/poppy.svg"
+        }
+      },
+      {
+        "name": "Beurre de C.-B.",
+        "origin": {
+          "label": "Fraser Valley",
+          "detail": "Beurre de laiterie",
+          "icon": "/images/origins/dairy.svg"
+        }
+      },
+      {
+        "name": "Miel local",
+        "origin": {
+          "label": "Île de Vancouver",
+          "detail": "Rucher artisanal",
+          "icon": "/images/origins/honey.svg"
+        }
+      },
+      {
+        "name": "Lait entier",
+        "origin": {
+          "label": "Fraser Valley",
+          "detail": "Produits laitiers de C.-B.",
+          "icon": "/images/origins/dairy.svg"
+        }
+      }
+    ]
+  }
+]

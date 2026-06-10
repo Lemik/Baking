@@ -1,0 +1,32 @@
+[
+  {
+    "id": "lemon-loaf",
+    "name": "Lemon Loaf",
+    "category": "bread",
+    "tagline": "Bright citrus, tender crumb, sunny glaze",
+    "included": [
+      "Organic wheat flour",
+      "Fresh lemons",
+      "BC butter",
+      "Cane sugar",
+      "Free-range eggs"
+    ],
+    "image": "/images/products/lemon-loaf.webp",
+    "orderSubject": "Order: Lemon Loaf"
+  },
+  {
+    "id": "poppy-seed-roll",
+    "name": "Poppy Seed Roll",
+    "category": "bread",
+    "tagline": "Soft dough, sweet filling, classic poppy swirl",
+    "included": [
+      "Wheat flour",
+      "Poppy seed filling",
+      "BC butter",
+      "Local honey",
+      "Whole milk"
+    ],
+    "image": "/images/products/poppy-seed-roll.webp",
+    "orderSubject": "Order: Poppy Seed Roll"
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "products": "Produits",
+    "recipes": "Recettes",
+    "order": "Commander"
+  },
+  "sections": {
+    "products": "Nos produits",
+    "productsSubtitle": "Fraîchement préparés dans notre cuisine — livraison à domicile ou cueillette à Nanaimo.",
+    "recipes": "Ce qu'il y a dedans",
+    "recipesSubtitle": "Chaque ingrédient est tracé jusqu'à des sources locales et régionales.",
+    "order": "Prêt à commander?",
+    "orderSubtitle": "Écrivez-nous avec votre commande et votre choix : livraison à domicile ou cueillette. Nous confirmerons la disponibilité et l'heure."
+  },
+  "productCategories": {
+    "bread": "Pain",
+    "cookie": "Biscuits"
+  },
+  "includedLabel": "Ce qui est inclus",
+  "ingredientsLabel": "ingrédients",
+  "pricingNote": "Contactez-nous pour la disponibilité et les prix",
+  "orderButton": "Commander par courriel",
+  "orderEmail": "baking@dushyn.com",
+  "orderBody": "Bonjour, je souhaite commander :",
+  "orderFulfillmentLine": "Préférence : livraison à domicile / cueillette",
+  "ctaPrimary": "Voir les produits",
+  "ctaOrder": "Commander par courriel",
+  "footer": {
+    "tagline": "Fait maison avec soin à Nanaimo, C.-B.",
+    "delivery": "Livraison à domicile dans Nanaimo",
+    "pickup": "Cueillette sur rendez-vous"
+  },
+  "langNames": {
+    "en": "English",
+    "fr": "Français",
+    "uk": "Українська",
+    "ru": "Русский"
+  },
+  "langShort": {
+    "en": "En",
+    "fr": "Fr",
+    "uk": "Uk",
+    "ru": "Ru"
+  }
+}

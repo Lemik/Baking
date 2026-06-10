@@ -1,0 +1,92 @@
+[
+  {
+    "productId": "lemon-loaf",
+    "ingredients": [
+      {
+        "name": "Органічне пшеничне борошно",
+        "origin": {
+          "label": "Острів Ванкувер",
+          "detail": "Помол у BC",
+          "icon": "/images/origins/grain.svg"
+        }
+      },
+      {
+        "name": "Свікі лимони",
+        "origin": {
+          "label": "Імпорт",
+          "detail": "Цедра та сік",
+          "icon": "/images/origins/lemon.svg"
+        }
+      },
+      {
+        "name": "Масло з BC",
+        "origin": {
+          "label": "Fraser Valley",
+          "detail": "Виробництво масло",
+          "icon": "/images/origins/dairy.svg"
+        }
+      },
+      {
+        "name": "Цукор тростини",
+        "origin": {
+          "label": "Fair trade",
+          "detail": "Нерфінована тростина",
+          "icon": "/images/origins/sugar.svg"
+        }
+      },
+      {
+        "name": "Яйця вільного вигулу",
+        "origin": {
+          "label": "Fraser Valley",
+          "detail": "Місцеві ферми",
+          "icon": "/images/origins/eggs.svg"
+        }
+      }
+    ]
+  },
+  {
+    "productId": "poppy-seed-roll",
+    "ingredients": [
+      {
+        "name": "Пшеничне борошно",
+        "origin": {
+          "label": "Британська Колумбія",
+          "detail": "Кам'яний помол",
+          "icon": "/images/origins/grain.svg"
+        }
+      },
+      {
+        "name": "Макова начинка",
+        "origin": {
+          "label": "Імпорт",
+          "detail": "Мелене насіння маку",
+          "icon": "/images/origins/poppy.svg"
+        }
+      },
+      {
+        "name": "Масло з BC",
+        "origin": {
+          "label": "Fraser Valley",
+          "detail": "Виробництво масло",
+          "icon": "/images/origins/dairy.svg"
+        }
+      },
+      {
+        "name": "Місцевий мед",
+        "origin": {
+          "label": "Острів Ванкувер",
+          "detail": "Невелика пасіка",
+          "icon": "/images/origins/honey.svg"
+        }
+      },
+      {
+        "name": "Цільне молоко",
+        "origin": {
+          "label": "Fraser Valley",
+          "detail": "Молочні продукти BC",
+          "icon": "/images/origins/dairy.svg"
+        }
+      }
+    ]
+  }
+]

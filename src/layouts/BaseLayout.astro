@@ -1,0 +1,47 @@
+---
+import '../styles/global.css';
+import type { Locale } from '../types';
+import { alternateLinks, siteUrl } from '../utils/i18n';
+
+interface Props {
+	lang: Locale;
+	title: string;
+	description: string;
+	brand: string;
+}
+
+const { lang, title, description, brand } = Astro.props;
+const alternates = alternateLinks(lang);
+const canonical = `${siteUrl}/${lang}/`;
+const ogImage = `${siteUrl}/images/og-placeholder.svg`;
+---
+
+<!doctype html>
+<html lang={lang}>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<link rel="canonical" href={canonical} />
+		{alternates.map(({ lang: hrefLang, href }) => (
+			<link rel="alternate" hreflang={hrefLang} href={href} />
+		))}
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content={brand} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={canonical} />
+		<meta property="og:image" content={ogImage} />
+		<meta property="og:locale" content={lang === 'uk' ? 'uk_UA' : lang === 'ru' ? 'ru_RU' : lang === 'fr' ? 'fr_CA' : 'en_CA'} />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={ogImage} />
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>

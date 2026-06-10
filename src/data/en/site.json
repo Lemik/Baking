@@ -1,0 +1,30 @@
+{
+  "title": "NANA Bakery — Lemon loaf & poppy seed roll, delivered or for pick up",
+  "description": "Home-baked lemon loaf and poppy seed roll in Nanaimo, BC. Door delivery or pick up. Order by email.",
+  "brand": "NANA Bakery",
+  "hero": {
+    "headline": "Lemon loaf & poppy seed roll, baked at home",
+    "subheadline": "Two favourites from our Nanaimo kitchen — door delivery or pick up, your choice.",
+    "badge": "Nanaimo, BC · Delivery & pick up"
+  },
+  "about": {
+    "title": "Baked with care, delivered with love",
+    "paragraphs": [
+      "NANA Bakery is a home kitchen crafting small batches of lemon loaf and poppy seed roll for neighbours across Nanaimo.",
+      "We source ingredients from Vancouver Island and British Columbia whenever possible — so every bake tells a local story.",
+      "No storefront — choose door delivery anywhere in Nanaimo, or pick up from our home kitchen at a time we arrange together."
+    ]
+  },
+  "fulfillment": {
+    "title": "Door delivery or pick up",
+    "subtitle": "Two easy ways to enjoy fresh baking in Nanaimo.",
+    "delivery": {
+      "title": "Door delivery",
+      "description": "We bring your order straight to your door anywhere in Nanaimo. Perfect when you'd rather stay cozy at home."
+    },
+    "pickup": {
+      "title": "Pick up",
+      "description": "Collect your order from our home kitchen. We'll confirm a convenient time when you email us."
+    }
+  }
+}

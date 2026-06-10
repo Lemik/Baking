@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Hero from '../../components/Hero.astro';
+import FulfillmentOptions from '../../components/FulfillmentOptions.astro';
+import ProductGrid from '../../components/ProductGrid.astro';
+import RecipeSection from '../../components/RecipeSection.astro';
+import OrderCta from '../../components/OrderCta.astro';
+import Footer from '../../components/Footer.astro';
+import { getLocaleData, isLocale, locales } from '../../utils/i18n';
+
+export function getStaticPaths() {
+	return locales.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+
+if (!lang || !isLocale(lang)) {
+	return Astro.redirect('/en/');
+}
+
+const data = getLocaleData(lang);
+---
+
+<BaseLayout lang={lang} title={data.site.title} description={data.site.description} brand={data.site.brand}>
+	<Header lang={lang} ui={data.ui} brand={data.site.brand} />
+	<main>
+		<Hero site={data.site} ui={data.ui} />
+		<FulfillmentOptions site={data.site} />
+		<ProductGrid products={data.products} ui={data.ui} />
+		<RecipeSection products={data.products} recipes={data.recipes} ui={data.ui} />
+		<OrderCta ui={data.ui} />
+	</main>
+	<Footer ui={data.ui} brand={data.site.brand} />
+</BaseLayout>

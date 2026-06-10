@@ -1,0 +1,57 @@
+---
+import type { SiteData } from '../types';
+
+interface Props {
+	site: SiteData;
+}
+
+const { site } = Astro.props;
+const { fulfillment } = site;
+---
+
+<section id="fulfillment" class="section fulfillment">
+	<div class="container">
+		<div class="section-header">
+			<h2>{fulfillment.title}</h2>
+			<p>{fulfillment.subtitle}</p>
+		</div>
+		<div class="fulfillment__grid">
+			<article class="fulfillment__option card">
+				<div class="fulfillment__icon" aria-hidden="true">🚪</div>
+				<h3>{fulfillment.delivery.title}</h3>
+				<p>{fulfillment.delivery.description}</p>
+			</article>
+			<article class="fulfillment__option card">
+				<div class="fulfillment__icon" aria-hidden="true">🧺</div>
+				<h3>{fulfillment.pickup.title}</h3>
+				<p>{fulfillment.pickup.description}</p>
+			</article>
+		</div>
+	</div>
+</section>
+
+<style>
+	.fulfillment__grid {
+		display: grid;
+		gap: 1.25rem;
+		grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+	}
+
+	.fulfillment__option {
+		padding: 1.5rem;
+	}
+
+	.fulfillment__icon {
+		font-size: 1.75rem;
+		margin-bottom: 0.75rem;
+	}
+
+	.fulfillment__option h3 {
+		margin-bottom: 0.5rem;
+	}
+
+	.fulfillment__option p {
+		margin: 0;
+		color: var(--color-muted);
+	}
+</style>

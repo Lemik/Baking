@@ -1,0 +1,118 @@
+---
+import OriginBadge from './OriginBadge.astro';
+import type { Product, Recipe, UiData } from '../types';
+
+interface Props {
+	products: Product[];
+	recipes: Recipe[];
+	ui: UiData;
+}
+
+const { products, recipes, ui } = Astro.props;
+
+function recipeFor(productId: string) {
+	return recipes.find((recipe) => recipe.productId === productId);
+}
+---
+
+<section id="recipes" class="section recipes">
+	<div class="container">
+		<div class="section-header">
+			<h2>{ui.sections.recipes}</h2>
+			<p>{ui.sections.recipesSubtitle}</p>
+		</div>
+		<div class="recipes__list">
+			{products.map((product) => {
+				const recipe = recipeFor(product.id);
+				if (!recipe) return null;
+				return (
+					<details class="recipe-card card">
+						<summary>
+							<span class="recipe-card__name">{product.name}</span>
+							<span class="recipe-card__hint">{recipe.ingredients.length} {ui.ingredientsLabel}</span>
+						</summary>
+						<div class="recipe-card__body">
+							<ul class="recipe-card__ingredients">
+								{recipe.ingredients.map((ingredient) => (
+									<li>
+										<span class="recipe-card__ingredient-name">{ingredient.name}</span>
+										<OriginBadge
+											label={ingredient.origin.label}
+											detail={ingredient.origin.detail}
+											icon={ingredient.origin.icon}
+										/>
+									</li>
+								))}
+							</ul>
+						</div>
+					</details>
+				);
+			})}
+		</div>
+	</div>
+</section>
+
+<style>
+	.recipes__list {
+		display: grid;
+		gap: 1rem;
+	}
+
+	.recipe-card summary {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1rem;
+		padding: 1.1rem 1.25rem;
+		cursor: pointer;
+		list-style: none;
+		font-weight: 600;
+	}
+
+	.recipe-card summary::-webkit-details-marker {
+		display: none;
+	}
+
+	.recipe-card summary::after {
+		content: '+';
+		font-size: 1.4rem;
+		color: var(--color-wheat);
+		line-height: 1;
+	}
+
+	.recipe-card[open] summary::after {
+		content: '−';
+	}
+
+	.recipe-card__name {
+		font-family: var(--font-display);
+		font-size: 1.15rem;
+		color: var(--color-crust);
+	}
+
+	.recipe-card__hint {
+		font-size: 0.85rem;
+		font-weight: 500;
+		color: var(--color-muted);
+	}
+
+	.recipe-card__body {
+		padding: 0 1.25rem 1.25rem;
+		border-top: 1px solid var(--color-border);
+	}
+
+	.recipe-card__ingredients {
+		list-style: none;
+		margin: 1rem 0 0;
+		padding: 0;
+		display: grid;
+		gap: 0.85rem;
+	}
+
+	.recipe-card__ingredient-name {
+		display: block;
+		font-weight: 600;
+		margin-bottom: 0.45rem;
+		color: var(--color-text);
+	}
+</style>

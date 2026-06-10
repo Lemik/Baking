@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#FAF7F2"/>
+  <circle cx="200" cy="120" r="280" fill="#F3ECE1"/>
+  <circle cx="980" cy="80" r="220" fill="#E8F0EA"/>
+  <text x="80" y="280" fill="#5C4033" font-family="Georgia, serif" font-size="72" font-weight="700">NANA Bakery</text>
+  <text x="80" y="350" fill="#6B5D4D" font-family="Arial, sans-serif" font-size="36">Home-baked bread &amp; cookies, delivered</text>
+  <rect x="80" y="400" width="360" height="120" rx="24" fill="#C68642"/>
+  <ellipse cx="260" cy="430" rx="120" ry="36" fill="#D4A574" opacity="0.5"/>
+  <circle cx="820" cy="430" r="70" fill="#E8C896" stroke="#8B6914" stroke-width="4"/>
+</svg>

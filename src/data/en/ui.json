@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "products": "Products",
+    "recipes": "Recipes",
+    "order": "Order"
+  },
+  "sections": {
+    "products": "Our products",
+    "productsSubtitle": "Fresh from our home kitchen — door delivery or pick up in Nanaimo.",
+    "recipes": "What's inside",
+    "recipesSubtitle": "Every ingredient traced to local and regional sources.",
+    "order": "Ready to order?",
+    "orderSubtitle": "Email us with your order and whether you'd like door delivery or pick up. We'll confirm availability and timing."
+  },
+  "productCategories": {
+    "bread": "Bread",
+    "cookie": "Cookies"
+  },
+  "includedLabel": "What's included",
+  "ingredientsLabel": "ingredients",
+  "pricingNote": "Contact for availability & pricing",
+  "orderButton": "Order by email",
+  "orderEmail": "baking@dushyn.com",
+  "orderBody": "Hi, I'd like to order the following:",
+  "orderFulfillmentLine": "Preferred: door delivery / pick up",
+  "ctaPrimary": "Browse products",
+  "ctaOrder": "Email us to order",
+  "footer": {
+    "tagline": "Home-baked with care in Nanaimo, BC",
+    "delivery": "Door delivery across Nanaimo",
+    "pickup": "Pick up by appointment"
+  },
+  "langNames": {
+    "en": "English",
+    "fr": "Français",
+    "uk": "Українська",
+    "ru": "Русский"
+  },
+  "langShort": {
+    "en": "En",
+    "fr": "Fr",
+    "uk": "Uk",
+    "ru": "Ru"
+  }
+}

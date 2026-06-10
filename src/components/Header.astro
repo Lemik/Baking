@@ -1,0 +1,134 @@
+---
+import type { Locale, UiData } from '../types';
+import { localePath } from '../utils/i18n';
+
+interface Props {
+	lang: Locale;
+	ui: UiData;
+	brand: string;
+}
+
+const { lang, ui, brand } = Astro.props;
+---
+
+<header class="site-header">
+	<div class="container site-header__inner">
+		<a class="site-brand" href={localePath(lang)}>
+			<span class="site-brand__mark" aria-hidden="true">🌾</span>
+			<span>{brand}</span>
+		</a>
+
+		<nav class="site-nav" aria-label="Main">
+			<a href={`${localePath(lang)}#products`}>{ui.nav.products}</a>
+			<a href={`${localePath(lang)}#recipes`}>{ui.nav.recipes}</a>
+			<a href={`${localePath(lang)}#order`}>{ui.nav.order}</a>
+		</nav>
+
+		<nav class="lang-switcher" aria-label="Language">
+			<ul>
+				{(['en', 'fr', 'uk', 'ru'] as Locale[]).map((code) => (
+					<li>
+						<a
+							href={localePath(code)}
+							lang={code}
+							hreflang={code}
+							class:list={[{ active: code === lang }]}
+							aria-current={code === lang ? 'page' : undefined}
+						>
+							{ui.langShort[code]}
+						</a>
+					</li>
+				))}
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<style>
+	.site-header {
+		position: sticky;
+		top: 0;
+		z-index: 20;
+		height: var(--header-h);
+		display: flex;
+		align-items: center;
+		background: rgba(250, 247, 242, 0.88);
+		backdrop-filter: blur(10px);
+		border-bottom: 1px solid var(--color-border);
+	}
+
+	.site-header__inner {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		width: min(100% - 2rem, var(--max));
+	}
+
+	.site-brand {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.55rem;
+		font-family: var(--font-display);
+		font-size: 1.15rem;
+		font-weight: 700;
+		color: var(--color-crust);
+		text-decoration: none;
+		white-space: nowrap;
+	}
+
+	.site-brand__mark {
+		font-size: 1.2rem;
+	}
+
+	.site-nav {
+		display: none;
+		gap: 1.25rem;
+		margin-inline: auto;
+	}
+
+	.site-nav a {
+		color: var(--color-muted);
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 0.95rem;
+	}
+
+	.site-nav a:hover {
+		color: var(--color-crust);
+	}
+
+	.lang-switcher ul {
+		display: flex;
+		gap: 0.25rem;
+		list-style: none;
+		margin: 0;
+		padding: 0.2rem;
+		background: var(--color-surface);
+		border: 1px solid var(--color-border);
+		border-radius: 999px;
+	}
+
+	.lang-switcher a {
+		display: inline-flex;
+		min-width: 2.1rem;
+		justify-content: center;
+		padding: 0.35rem 0.55rem;
+		border-radius: 999px;
+		text-decoration: none;
+		font-size: 0.82rem;
+		font-weight: 700;
+		color: var(--color-muted);
+	}
+
+	.lang-switcher a:hover,
+	.lang-switcher a.active {
+		background: var(--color-surface-2);
+		color: var(--color-crust);
+	}
+
+	@media (min-width: 768px) {
+		.site-nav {
+			display: flex;
+		}
+	}
+</style>

@@ -1,0 +1,92 @@
+[
+  {
+    "productId": "lemon-loaf",
+    "ingredients": [
+      {
+        "name": "Organic wheat flour",
+        "origin": {
+          "label": "Vancouver Island",
+          "detail": "Milled in BC",
+          "icon": "/images/origins/grain.svg"
+        }
+      },
+      {
+        "name": "Fresh lemons",
+        "origin": {
+          "label": "Imported",
+          "detail": "Zest and juice",
+          "icon": "/images/origins/lemon.svg"
+        }
+      },
+      {
+        "name": "BC butter",
+        "origin": {
+          "label": "Fraser Valley",
+          "detail": "Creamery butter",
+          "icon": "/images/origins/dairy.svg"
+        }
+      },
+      {
+        "name": "Cane sugar",
+        "origin": {
+          "label": "Fair trade",
+          "detail": "Unrefined cane",
+          "icon": "/images/origins/sugar.svg"
+        }
+      },
+      {
+        "name": "Free-range eggs",
+        "origin": {
+          "label": "Fraser Valley",
+          "detail": "Local farms",
+          "icon": "/images/origins/eggs.svg"
+        }
+      }
+    ]
+  },
+  {
+    "productId": "poppy-seed-roll",
+    "ingredients": [
+      {
+        "name": "Wheat flour",
+        "origin": {
+          "label": "British Columbia",
+          "detail": "Stone-ground wheat",
+          "icon": "/images/origins/grain.svg"
+        }
+      },
+      {
+        "name": "Poppy seed filling",
+        "origin": {
+          "label": "Imported",
+          "detail": "Ground poppy seeds",
+          "icon": "/images/origins/poppy.svg"
+        }
+      },
+      {
+        "name": "BC butter",
+        "origin": {
+          "label": "Fraser Valley",
+          "detail": "Creamery butter",
+          "icon": "/images/origins/dairy.svg"
+        }
+      },
+      {
+        "name": "Local honey",
+        "origin": {
+          "label": "Vancouver Island",
+          "detail": "Small-batch apiary",
+          "icon": "/images/origins/honey.svg"
+        }
+      },
+      {
+        "name": "Whole milk",
+        "origin": {
+          "label": "Fraser Valley",
+          "detail": "BC dairy",
+          "icon": "/images/origins/dairy.svg"
+        }
+      }
+    ]
+  }
+]

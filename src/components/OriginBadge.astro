@@ -1,0 +1,45 @@
+---
+interface Props {
+	label: string;
+	detail: string;
+	icon: string;
+}
+
+const { label, detail, icon } = Astro.props;
+---
+
+<div class="origin-badge">
+	<img src={icon} alt="" width="28" height="28" aria-hidden="true" />
+	<div>
+		<strong>{label}</strong>
+		<span>{detail}</span>
+	</div>
+</div>
+
+<style>
+	.origin-badge {
+		display: flex;
+		align-items: center;
+		gap: 0.65rem;
+		padding: 0.55rem 0.75rem;
+		border-radius: var(--radius-sm);
+		background: var(--color-surface-2);
+		border: 1px solid var(--color-border);
+	}
+
+	.origin-badge img {
+		flex-shrink: 0;
+	}
+
+	.origin-badge strong {
+		display: block;
+		font-size: 0.88rem;
+		color: var(--color-crust);
+	}
+
+	.origin-badge span {
+		display: block;
+		font-size: 0.8rem;
+		color: var(--color-muted);
+	}
+</style>
