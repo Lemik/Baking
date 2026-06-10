@@ -7,9 +7,9 @@
     "included": [
       "Organic wheat flour",
       "Fresh lemons",
-      "BC butter",
-      "Cane sugar",
-      "Free-range eggs"
+      "Butter",
+      "Sugar",
+      "Free-range eggs/quail eggs"
     ],
     "image": "/images/products/lemon-loaf.webp",
     "orderSubject": "Order: Lemon Loaf"
@@ -22,9 +22,9 @@
     "included": [
       "Wheat flour",
       "Poppy seed filling",
-      "BC butter",
-      "Local honey",
-      "Whole milk"
+      "Butter",
+      "Honey",
+      "Milk"
     ],
     "image": "/images/products/poppy-seed-roll.webp",
     "orderSubject": "Order: Poppy Seed Roll"
