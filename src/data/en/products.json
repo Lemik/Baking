@@ -11,6 +11,7 @@
       "Sugar",
       "Free-range eggs/quail eggs"
     ],
+    "allergens": ["Wheat", "Eggs", "Milk"],
     "image": "/images/products/lemon-loaf.webp",
     "orderSubject": "Order: Lemon Loaf"
   },
@@ -26,6 +27,7 @@
       "Honey",
       "Milk"
     ],
+    "allergens": ["Wheat", "Milk"],
     "image": "/images/products/poppy-seed-roll.webp",
     "orderSubject": "Order: Poppy Seed Roll"
   }

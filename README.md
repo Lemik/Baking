@@ -36,7 +36,7 @@ Edit JSON in `src/data/{locale}/`:
 |------|----------|
 | `ui.json` | Navigation, buttons, section headings |
 | `site.json` | Hero, about, SEO title & description |
-| `products.json` | Product names, taglines, included items, order subjects |
+| `products.json` | Product names, taglines, included items, allergens, order subjects |
 | `recipes.json` | Ingredients and origin badges |
 
 Product images: replace files in `public/images/products/` (keep filenames).  

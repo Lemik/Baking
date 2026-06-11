@@ -17,6 +17,7 @@
     "cookie": "Печиво"
   },
   "includedLabel": "Що входить",
+  "allergensLabel": "Алергени",
   "ingredientsLabel": "інгредієнтів",
   "pricingNote": "Зв'яжіться з нами щодо наявності та цін",
   "orderButton": "Замовити email",

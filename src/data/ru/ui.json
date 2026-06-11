@@ -17,6 +17,7 @@
     "cookie": "Печенье"
   },
   "includedLabel": "Что входит",
+  "allergensLabel": "Аллергены",
   "ingredientsLabel": "ингредиентов",
   "pricingNote": "Свяжитесь с нами по наличию и ценам",
   "orderButton": "Заказать по email",

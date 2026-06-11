@@ -22,6 +22,7 @@ export interface UiData {
 	};
 	productCategories: { bread: string; cookie: string };
 	includedLabel: string;
+	allergensLabel: string;
 	ingredientsLabel: string;
 	pricingNote: string;
 	orderButton: string;
@@ -55,6 +56,7 @@ export interface Product {
 	category: 'bread' | 'cookie';
 	tagline: string;
 	included: string[];
+	allergens: string[];
 	image: string;
 	orderSubject: string;
 }

@@ -7,10 +7,11 @@
     "included": [
       "Farine de blé biologique",
       "Citrons frais",
-      "Beurre de C.-B.",
-      "Sucre de canne",
-      "Œufs de poules élevées en liberté"
+      "Beurre",
+      "Sucre",
+      "Œufs fermiers / caille"
     ],
+    "allergens": ["Blé", "Œufs", "Lait"],
     "image": "/images/products/lemon-loaf.webp",
     "orderSubject": "Commande : Pain au citron"
   },
@@ -22,10 +23,11 @@
     "included": [
       "Farine de blé",
       "Garniture de graines de pavot",
-      "Beurre de C.-B.",
-      "Miel local",
-      "Lait entier"
+      "Beurre",
+      "Miel",
+      "Lait"
     ],
+    "allergens": ["Blé", "Lait"],
     "image": "/images/products/poppy-seed-roll.webp",
     "orderSubject": "Commande : Rouleau aux graines de pavot"
   }

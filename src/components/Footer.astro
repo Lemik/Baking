@@ -1,55 +1,124 @@
 ---
-import type { UiData } from '../types';
+import type { Locale, UiData } from '../types';
+import { localePath } from '../utils/i18n';
 
 interface Props {
+	lang: Locale;
 	ui: UiData;
 	brand: string;
 }
 
-const { ui, brand } = Astro.props;
+const { lang, ui, brand } = Astro.props;
 const year = new Date().getFullYear();
 ---
 
 <footer class="site-footer">
-	<div class="container site-footer__inner">
-		<div>
-			<strong>{brand}</strong>
-			<p>{ui.footer.tagline}</p>
-			<p>{ui.footer.delivery}</p>
-			<p>{ui.footer.pickup}</p>
+	<div class="container">
+		<div class="site-footer__main">
+			<div class="site-footer__content">
+				<p class="site-footer__tagline">{ui.footer.tagline}</p>
+				<ul class="site-footer__meta">
+					<li>{ui.footer.delivery}</li>
+					<li>{ui.footer.pickup}</li>
+				</ul>
+			</div>
+			<p class="site-footer__copy">© {year} {brand}</p>
+			<a class="site-footer__logo-link" href={localePath(lang)}>
+				<img
+					class="site-footer__logo"
+					src="/images/logo.webp"
+					alt={brand}
+					width="160"
+					height="152"
+					loading="lazy"
+					decoding="async"
+				/>
+			</a>
 		</div>
-		<p class="site-footer__copy">© {year} {brand}</p>
 	</div>
 </footer>
 
 <style>
 	.site-footer {
-		padding: 2rem 0 2.5rem;
+		padding: 2.25rem 0 2rem;
 		border-top: 1px solid var(--color-border);
 		background: rgba(255, 255, 255, 0.35);
 	}
 
-	.site-footer__inner {
-		display: flex;
-		flex-direction: column;
-		gap: 1rem;
+	.site-footer__main {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		align-items: center;
+		gap: 1.5rem;
 		color: var(--color-muted);
 	}
 
-	.site-footer strong {
-		display: block;
-		font-family: var(--font-display);
-		font-size: 1.1rem;
-		color: var(--color-crust);
-		margin-bottom: 0.35rem;
-	}
-
-	.site-footer p {
-		margin: 0 0 0.35rem;
-		font-size: 0.95rem;
+	.site-footer__content {
+		grid-column: 1;
+		min-width: 0;
 	}
 
 	.site-footer__copy {
+		grid-column: 2;
+		justify-self: center;
+		text-align: center;
+		margin: 0;
 		font-size: 0.85rem;
+		color: var(--color-muted);
+	}
+
+	.site-footer__logo-link {
+		grid-column: 3;
+		justify-self: end;
+		display: inline-flex;
+		text-decoration: none;
+	}
+
+	.site-footer__tagline {
+		margin: 0 0 0.65rem;
+		font-family: var(--font-display);
+		font-size: 1.1rem;
+		font-weight: 600;
+		color: var(--color-crust);
+		line-height: 1.35;
+	}
+
+	.site-footer__meta {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: 0.3rem;
+		font-size: 0.92rem;
+	}
+
+	.site-footer__logo {
+		height: 5.75rem;
+		width: auto;
+		max-width: min(100%, 9.5rem);
+	}
+
+	@media (max-width: 540px) {
+		.site-footer__main {
+			grid-template-columns: 1fr auto;
+			grid-template-rows: auto auto;
+		}
+
+		.site-footer__content {
+			grid-row: 1;
+		}
+
+		.site-footer__logo-link {
+			grid-column: 2;
+			grid-row: 1;
+		}
+
+		.site-footer__copy {
+			grid-column: 1 / -1;
+			grid-row: 2;
+			justify-self: center;
+			margin-top: 1rem;
+		}
 	}
 </style>

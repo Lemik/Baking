@@ -31,6 +31,12 @@ const mailto = orderMailto(
 				{product.included.map((item) => <li>{item}</li>)}
 			</ul>
 		</div>
+		<div class="product-card__allergens">
+			<h4>{ui.allergensLabel}</h4>
+			<ul class="pill-list pill-list--allergens">
+				{product.allergens.map((allergen) => <li>{allergen}</li>)}
+			</ul>
+		</div>
 		<a class="btn btn-primary product-card__order" href={mailto}>{ui.orderButton}</a>
 	</div>
 </article>
@@ -90,7 +96,8 @@ const mailto = orderMailto(
 		margin: 0;
 	}
 
-	.product-card__included h4 {
+	.product-card__included h4,
+	.product-card__allergens h4 {
 		font-family: var(--font-sans);
 		font-size: 0.82rem;
 		font-weight: 700;
@@ -98,6 +105,13 @@ const mailto = orderMailto(
 		letter-spacing: 0.05em;
 		color: var(--color-muted);
 		margin: 0 0 0.35rem;
+	}
+
+	.pill-list--allergens li {
+		background: #fef3e2;
+		border-color: #e8c896;
+		color: var(--color-crust);
+		font-weight: 600;
 	}
 
 	.product-card__order {

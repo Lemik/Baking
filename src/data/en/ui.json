@@ -17,6 +17,7 @@
     "cookie": "Cookies"
   },
   "includedLabel": "What's included",
+  "allergensLabel": "Allergens",
   "ingredientsLabel": "ingredients",
   "pricingNote": "Contact for availability & pricing",
   "orderButton": "Order by email",

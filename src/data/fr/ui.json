@@ -17,6 +17,7 @@
     "cookie": "Biscuits"
   },
   "includedLabel": "Ce qui est inclus",
+  "allergensLabel": "Allergènes",
   "ingredientsLabel": "ingrédients",
   "pricingNote": "Contactez-nous pour la disponibilité et les prix",
   "orderButton": "Commander par courriel",

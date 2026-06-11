@@ -24,10 +24,10 @@ const data = getLocaleData(lang);
 <BaseLayout lang={lang} title={data.site.title} description={data.site.description} brand={data.site.brand}>
 	<Header lang={lang} ui={data.ui} brand={data.site.brand} />
 	<main>
-		<Hero site={data.site} ui={data.ui} />
+		<Hero site={data.site} ui={data.ui} products={data.products} />
 		<ProductGrid products={data.products} ui={data.ui} />
 		<RecipeSection products={data.products} recipes={data.recipes} ui={data.ui} />
 		<OrderCta ui={data.ui} />
 	</main>
-	<Footer ui={data.ui} brand={data.site.brand} />
+	<Footer lang={lang} ui={data.ui} brand={data.site.brand} />
 </BaseLayout>
