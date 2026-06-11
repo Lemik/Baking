@@ -14,6 +14,7 @@ const { lang, title, description, brand } = Astro.props;
 const alternates = alternateLinks(lang);
 const canonical = `${siteUrl}/${lang}/`;
 const ogImage = `${siteUrl}/images/og-placeholder.svg`;
+const gaId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
 ---
 
 <!doctype html>
@@ -40,6 +41,17 @@ const ogImage = `${siteUrl}/images/og-placeholder.svg`;
 		<meta name="twitter:description" content={description} />
 		<meta name="twitter:image" content={ogImage} />
 		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+		{gaId && (
+			<>
+				<script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}></script>
+				<script is:inline define:vars={{ gaId }}>
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag('js', new Date());
+					gtag('config', gaId);
+				</script>
+			</>
+		)}
 	</head>
 	<body>
 		<slot />
